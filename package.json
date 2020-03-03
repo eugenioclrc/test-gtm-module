@@ -1,0 +1,29 @@
+{
+  "name": "test-gtm-module",
+  "version": "1.0.0",
+  "description": "Test for gtag, tag manager and optimize",
+  "author": "eugenioclrc",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/gtm": "^2.2.2",
+    "nuxt": "^2.11.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^2.0.2",
+    "@nuxtjs/eslint-module": "^1.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-nuxt": ">=0.5.1",
+    "push-dir": "^0.4.1"
+  }
+}
