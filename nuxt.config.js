@@ -1,6 +1,6 @@
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/<repository-name>/'
+    base: '/test-gtm-module/'
   }
 } : {}
 
@@ -62,6 +62,7 @@ export default {
   ** Build configuration
   */
   build: {
+    buildDir: 'docs',
     /*
     ** You can extend webpack config here
     */
